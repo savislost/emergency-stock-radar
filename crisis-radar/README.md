@@ -1,16 +1,52 @@
-# React + Vite
+# 🚨 Emergency Supply Radar
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A real-time disaster response intelligence dashboard tracking availability, stock status, and pricing of vital relief and medical supplies using Bright Data Web Scraper API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Problem Statement
+During natural disasters and regional emergencies, essential medical supplies (ORS, first aid kits, antiseptics, hydration packs) face acute supply shortages. Emergency response teams and citizens lack real-time visibility into local pharmacy availability, leading to wasted time and delayed relief.
 
-## React Compiler
+## 💡 Solution
+Emergency Supply Radar bridges this gap by continuously monitoring pharmacy retail networks via Bright Data. The platform categorizes critical inventory, highlights acute shortages via automated beacon alerts, and provides a spatial UI for scanning supply streams.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ⚡ Key Features
+- **Live Inventory Telemetry**: Real-time tracking of essential supplies across local retail endpoints.
+- **Dynamic Categorization**: Automatic tagging for Hydration, Medical, Power, and Rations.
+- **Critical Shortage Alerts**: Automated alert banner highlighting depleted supplies.
+- **Multi-Filter System**: Instant keyword search and stock/category filtering.
+- **Spatial UI**: Glassmorphic 3D interactive tilt cards with trend metrics.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 🛠️ Tech Stack
+- **Frontend**: React 18, Vite, TanStack Router, Tailwind CSS, Lucide Icons, Framer Motion
+- **Backend**: Node.js, Express.js, CORS
+- **Data Scraping**: Bright Data Web Scraper API (Apollo Pharmacy Network)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+\`\`\`bash
+git clone https://github.com/savislost/emergency-stock-radar.git
+cd emergency-stock-radar
+\`\`\`
+
+### 2. Backend Setup
+\`\`\`bash
+cd crisis-radar/backend
+npm install
+node server.js
+\`\`\`
+
+### 3. Frontend Setup
+\`\`\`bash
+cd ../backend/vision-radar-hq
+npm install
+npm run dev
+\`\`\`
+Open `http://localhost:8080` in your browser.
